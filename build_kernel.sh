@@ -21,5 +21,9 @@ git clone git@github.com:Peter-McAlister-s3294034/Assignment_2.git
 
 git clone --depth=1 https://github.com/raspberrypi/linux
 
+# Copy the .config file form the Assignment_2 file to the linux folder
+
+cp /Assignment_2/.config /linux
+
 
 
