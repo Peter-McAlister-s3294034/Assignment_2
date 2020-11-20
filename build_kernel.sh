@@ -16,5 +16,10 @@ COMMENT
 
 git clone git@github.com:Peter-McAlister-s3294034/Assignment_2.git 
 
+# This will clone the repositoryas specified from week 7
+# It wil be cloned into a sub-folder of assignment_2 called linux
+
+git clone --depth=1 https://github.com/raspberrypi/linux
+
 
 
