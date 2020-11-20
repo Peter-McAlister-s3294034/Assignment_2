@@ -1,38 +1,40 @@
-#!/bin/bash
-:' ******************************************************
-********** Student Name: Peter McAlister ****************
-********** Student Number: s3294034 *********************
-********** Assignment: 2 ********************************
-*********************************************************'
+#! /bin/bash
 
-:'checkout your repository (must be done using ssh not https and 
-must be done with ssh keys from your end so no password will be 
-required. Do not submit any kind of password or ssh key as in that 
-case you will get no marks for this part of the assignment. So long 
-as you have made rmitusap a collaborator and you have setup 
-the keys correctly on your raspberry pi this is all that will be required.'
+#testone
 
+#mkdir ~/Desktop/s3294034_Assignment_2 
 
+#cd ~/Desktop/s3294034_Assignment_2
 
-:'check out the raspberry pi kernel repository as provided in the week 7 lab sheet.'
+#mkdir /home/.ssh
 
+echo "-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
+NhAAAAAwEAAQAAAQEA0BWe6GAs4NF+cpXOLzZQ95CrNRf+ncmmC526Gx/OMG6hqK0dR4g/
+Ki9rFpRBAP83VNAxjoOKBt9QSnDT4/l0LTn5meIcerVhKw7fM3ujbZVAyFmlHz43XHPtO5
+Tv2VbQ1Cr4NbxZ9n573c9qv6rfiKMruIHNECRBCvhaGGcf6MXBvVTxssjJsvoG9LX50I3b
+2dctSu4iL7kZKsCCRvMgZGdJ8/LLVL0GaZbP6LZetZxwLz3H8ivgCE9gLMXjqHq3nTjDJ7
+ZAaukKnGUKAWu7pZQN4Na0CBqNcQDyuaHRHgjFELwW40ECIFrCDEPiB6wGWFNGfnrkGRHj
+44PJSDUmtwAAA9BhjvVOYY71TgAAAAdzc2gtcnNhAAABAQDQFZ7oYCzg0X5ylc4vNlD3kK
+s1F/6dyaYLnbobH84wbqGorR1HiD8qL2sWlEEA/zdU0DGOg4oG31BKcNPj+XQtOfmZ4hx6
+tWErDt8ze6NtlUDIWaUfPjdcc+07lO/ZVtDUKvg1vFn2fnvdz2q/qt+Ioyu4gc0QJEEK+F
+oYZx/oxcG9VPGyyMmy+gb0tfnQjdvZ1y1K7iIvuRkqwIJG8yBkZ0nz8stUvQZpls/otl61
+nHAvPcfyK+AIT2AsxeOoeredOMMntkBq6QqcZQoBa7ullA3g1rQIGo1xAPK5odEeCMUQvB
+bjQQIgWsIMQ+IHrAZYU0Z+euQZEePjg8lINSa3AAAAAwEAAQAAAQBGm2+GbkwMJUoA27BQ
++N9UgfR2WaP+KpR7UJP77Djs2j1knQlYYnT8fYaa7Md57R/7WYHXV+8YEeKOv+ZGbzjqt8
+doXf9H7BACqlM2hveXkZOf6DtNdLEYYAXZt9oDJ6BIviPnJ/hm2dhyFZWlX/flx2hofTL2
+DTc837TCnwuG0iaqGVMZW1N3YgeeX/szUUXpHfCAKuNcgeCpyvbtuOCaeaJyJj4Pye0wAb
+4pgGmI8H8bl1hqXysroNdgI9G7WFOhmgqH8miSQlddL1BYHbVd95tceHN3VlYMcLLK078h
+0Xb1AZcLUjvfiUxaAFUJ5IbrFzUjER2KjAsOeSTHgkEhAAAAgQCM90O906OEMWbddVGsyM
+3mHCJd6ZCYytu0eEf47n1avAX4AElgrYhWSC7jxaw1KsBgPZBTYLD2W+welt53bnztKLR3
+k2jousukpUEl4c5AhL8oSnay79cBd82ftGC6nhukvSO1WMQ08NaByVIRrcZzyLo9T9QxlR
+t1tx32L7mYMwAAAIEA+SC48M+t9z78uJCVqbI7jD8kqfGbdZLZ+9YaKA/ML9ENUOIkUfC2
+/YUdm7keHOfrZ2+7WE+oQqTt+WKRnLxStoqDjpG68FjZqDjhahqSYzOcWu9URi+mOlEZuE
+JmiZ18P97pZwZ+BYoo7Q0Qmgoso6bjclIekfZ/AYRlsfiatH8AAACBANXTD3nwCgdC3OCc
+FAvWntPTG2PlumydLfrqAi95wwNqmMs7YRwBpMWGqhTEb6GiqPPLqSlqerW88T3jeG20NU
+cQ2MCdqSiN5NFkJqkYQdUw6h9uEdI1Q9gN4+AyCg4h2IMvpwiVw9kKc1vO9ThyWP7pumw9
+yWB7kKHsIpbavxHJAAAAFHMzMjk0MDM0QHJhc3BiZXJyeXBpAQIDBAUG
+-----END OPENSSH PRIVATE KEY-----" > ~/.ssh/s3294034_id_rsa
 
+ssh-agent bash -c 'ssh-add /home/.ssh/s3294034_id_rsa; git clone git@github.com:Peter-McAlister-s3294034/Assignment_2 test112'
 
-:'copy your “.config” file into the right place'
-
-
-
-:'build the kernel.'
-
-
-
-:'Make a backup of appropriate files in /boot 
-and store them in an appropriate compressed format.'
-
-
-
-:'copy the new files created by this build process into the right place and reboot the system.'
-
-
-
-:'After having done this the new kernel and associated drivers should be installed.'
