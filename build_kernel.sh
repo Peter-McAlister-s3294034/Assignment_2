@@ -44,10 +44,10 @@ tar -pczf linux.tar.gz /boot/backup
 
 # copy the new files created by this build process into the right place and reboot the system.
 
-sudo make modules_install
-sudo cp arch/arm/boot/dts/*.dtb /boot/
-sudo cp arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/
-sudo cp arch/arm/boot/dts/overlays/README /boot/overlays/
-sudo cp arch/arm/boot/zImage /boot/$KERNEL.img
+make modules_install
+cp arch/arm/boot/dts/*.dtb /boot/
+cp arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/
+cp arch/arm/boot/dts/overlays/README /boot/overlays/
+cp arch/arm/boot/zImage /boot/$KERNEL.img
 
 
