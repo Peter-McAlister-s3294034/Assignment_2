@@ -1,0 +1,54 @@
+./" Manpage for the build kernel scrip
+./- Peter McAlister
+./-s3294034
+.SH NAME
+NAME
+buildkernel \- download the linux kernel and copy across to the boot directory
+
+.SH SYNOPSIS
+SYNOPSIS
+The command to run the scrip is ./build_kernel.sh
+
+.SH DESCRIPTION
+
+DESCRIPTION
+This script was written to perform multiple functions, first it is to download my repository
+second it is to download the linux kernel form the raspberry pi website. It is then to make
+the appropriate changes, copy the config into the directory and then make the file. Once
+this is done the user can then run the command uname -r and this should show the student
+number appended to the version number. It should run without any input from the user as
+the user who is performing this should be the root user
+
+.SH OPTIONS
+OPTIONS
+[sudo] ./build_kernel.sh
+
+.SH FILES
+FILES
+[.config] - this is essential as this has the necessary changes that are needed prior to the launch of the scrip
+
+.SH ENVIRONMENT
+ENVIRONMENT
+raspberry pi 4 was used in this to make the script and perform the functions
+
+.SH DIAGNOSTICS
+DISGNOSTICS
+phoronix-test-suite was used to check 4 test suites and see what the performance was, the testign here included
+crptography, cpu, network and chess, the chess is this is a common game within computers and so while underload
+the system should be able to handle this as a game
+
+.SH SEE ALSO
+SEE ALSO
+-f [FORCE], -v [VERBOSE]
+
+.SH BUGS
+BUGS
+no known bugs at this stage
+
+.SH AUTHOR
+AUTHOR
+Peter McAlister (s3294034@student.rmit.edu.au)
+
+
+
+
