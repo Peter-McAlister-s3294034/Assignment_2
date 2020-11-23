@@ -17,4 +17,35 @@ Man Pages
 As per the convention I created one ‘man’ page with the instructions for the script in the correct format.
 I used shell check to correct my script
 
+BIBLIOGRAPHY
+How to modify the local version of Linux kernel?
+https://nanxiao.me/en/how-to-modify-the-local-version-of-linux-kernel/#:~:text=Execute%20%E2%80%9C%20make%20menuconfig%20%E2%80%9D%20command%2C,nan%20%E2%80%9C%2C%20then%20save%20it.
+Last accessed 23/11/2020
+Configuring the kernel
+http://newbiedoc.sourceforge.net/tutorials/kernel-pkg/config-kernel-pkg.html.en’
+Last accessed 23/11/2020
+Kernel Build
+https://www.raspberrypi.org/documentation/linux/kernel/building.md
+Last accessed 23/11/2020
+Test your SSH connection
+https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/testing-your-ssh-connection
+Last accessed 23/11/2020
+Pushing Commit
+https://docs.github.com/en/free-pro-team@latest/github/using-git/pushing-commits-to-a-remote-repository
+Last accessed 23/11/2020
+Basic Markdown
+https://www.markdownguide.org/basic-syntax/#overview
+Last accessed 23/11/2020
+Bash for Beginners
+https://tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html
+Last accessed 23/11/2020
+Format a man page
+https://tldp.org/HOWTO/Man-Page/q3.html
+Last accessed 23/11/2020
+
+
+
+
+
+
 
