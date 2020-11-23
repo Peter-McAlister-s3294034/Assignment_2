@@ -5,23 +5,32 @@
 	</head>
 	<body>
 		<h1>Performance Report Raspberry Pi</h1>
-		<h2>St<h2>Student Number: s3294034</h2>
+		<h2>Student Name: Peter McAlister</h2>
+		<h2>Student Number: s3294034</h2>
+		<br>
+		<h3>INTRODUCTION</h3>
+			<p>The purpose of this report is to details findings from the running of the following four test suites</p>
+			<p>005 Chess</p>
+			<p>011 CPU</p>
+			<p>014 Cryptography</p>
+			<p>079 Network</p>
+			<p>The reason I choose these tests is because they test the performance of the raspberry pi in terms of performance</p>
+			<p>against a real-world situation, the raspberry pi can be used for crypto mining and as such the CPU and networking</p>
+			<p>capability would be in question; I choose chess as a comparison as almost all computers have Chess as a game on their system</p>
+			<p>Here is a link to the article</p>
+			<p>h-to/mine-cryptocurrency-raspberry-pi</p>
 			<br>
-			<h3>INTRODUCTION</h3>
-			<p>The purpose of this report is to details findings from the running o I choose this tests is because they test the performance of the raspberry pi in terms of performance</p>
-			<p>against a real world situation, the raspberry pi can be used for crypto mining and as such the cpu and networking</p>
-			<p>cabability would be in question, I choose chess as a comparison as almost all computers have Chess as a game onystem</p><br>
 			<h3>METHOD</h3>
-			<p>I initially scrolled through the test suites and tests to see what was avaliable, I have tested many sofwtare applications but never performed</p>
-			<p>peformance testing whetehr jmeter or neoload so this is as close as I will get. Havign read an article about Pi's being used for crytpo I thought</p>
-			<p>what would be the parameters for the application that would need to be tested, this is why I decided on the above listed 4 stest suites </p><br>
+			<p>I initially scrolled through the test suites and tests to see what was avaliable, I have tested many software applications but never performed</p>
+			<p>performance testing whether JMeter or neoload so this is as close as I will get. Having read an article about Pi's being used for crypto I thought</p>
+			<p>what would be the parameters for the application that would need to be tested, this is why I decided on the above listed 4 test suites </p><br>
 			<p>Installation: The steps used are as follows<p>
-			<p>1. sudo apt-get update of the pi to ensure that any necessary dependacies are in place</p>
+			<p>1. sudo apt-get update of the pi to ensure that any necessary dependencies are in place</p>
 			<p>2. Alter the mirrors to those in the documentation (see below)</p>
-			<p>3. change directory tot he appropriate file</p>
-			<p> command: /etc/apt/sources.list</p>
+			<p>3. change directory to the appropriate file</p>
+			<p> command: /etc/apt/sources. List</p>
 			<p>deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi</p>
-			<p>deb http://mbionic main restricted multiverse universe</p>
+			<p>deb http://mirrors.ustc.edu.cn/ubuntu-ports bionic main restricted multiverse universe</p>
 			<p>4. Save the file</p>
 			<p>5. Next required the changing of the keys within the system - see below commands</p>
 			<p> command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32</p>
@@ -29,101 +38,129 @@
 			<p>6.next install the test suites</p>
 			<p> command: sudo apt-get install phoronix-test-suite</p><br>
 			<p>Using Phoronix</p>
-			<p>Once installed I then went to the Raspberry Pi interface and ran th as listed above</p><br>
-			<hULTS</h3		<p>005 Chess - 3 results</p>
-		<p>(1) TSCP</p>
-		<p>351441 seconds (less is better this was to the higher end)</p>
-		<p>(2) m-queens</p>
-		<p>1029.75 seconds (less is better this was to the higher end)</p>
-		<p>(3) N-Queens</p>
-		<p>seconds (less is better this was to the higher end)</p><br>
-		<p>014 Cryptography - 19 results</rypto++</p>
-		<p>MIB/Seconds (More is better)</p>
-		<p>(5) Bork File encrypter</p>
-		<p>1</p>
-		<p>(6) Nettle/p>
-		<p>1</p>
-		<p>(7) Nettle</p>
-		<p>1<p>1</p>
-		<p>(9) Nettle</p>
-		<p>1</p>
-		<p>(10) Botan</p>
-		<p>1</p>
-		<p>(11) Botan</p>
-		<p>1</p>
-		<p>(12) Botan</p>
-		<p>1</p>
-		<p>(13) Botan</p>
-		<p>1</p>
-		<p>(14) Botan</p>
-		<p>1</p>
-		<p>(15) John the Ripper</p>
-		<p>1</p>
-		<p>(16) John the Ripper</p>
-		<p>1</p>
-		<p>(17) GnuPG</p>
-		<p>1</p>
-		<p>(18) OpenSSL</p>
-		<p>1</p>
-		<p>(19) Aircrack-ng</p>
-		<p>1159.75 K/S More is better</p><br>
-		<p>079 Network</p>
-		<p>(1)RamSpeed SMP</p>
-		<p>3080.63 MB's More is better</p>
-		<p>(2)RamSpeed SMP</p>
-		<p>3343.21 MB's More is better</p>
-		<p>(3)RamSpeed SMP</p>
-		<p>1 MB's More is better</p>
-		<p>(4)RamSpeed SMP</p>
-		<p>1MB's More is better</p>
-		<p>(5)RamSpeed SMP</p>
-		<p>1 MB's More is better</p>
-		<p>(6)RamSpeed SMP</p>
-		<p>1 MB's More is better</p>
-		<p>(7)RamSpeed SMP</p>
-		<p>1 MB's More is better</p>
-		<p>(8)RamSpeed SMP</p>
-		<p>1 MB's More is better</p>
-		<p>(9)RamSpeed SMP</p>
-		<p>1 MB's More is better</p>
-		<p>(10)RamSpeed SMP</p>
-		<p>1 MB's More is better</p>
-		<p>(11)Steam</p>
-		<p>1 MB's More is better</p>
-		<p>(12)Steam</p>
-		<p>1 MB's More is better</p>
-		<p>(13)Steam</p>
-		<p>1 MB's More is better</p>
-		<p>(14)Steam</p>
-		<p>1 MB's More is better</p>
-		<p>(15)Tinymembench</p>
-		<p>1 MB's More is better</p>
-		<p>(16)MBW</p>
-		<p>1 MB's More is better</p>
-		<p>(17)MBW</p>
-		<p>1 MB's More is better</p>
-		<p>(18)t-test1</p>
-		<p>1 Seconds Less is better</p>
-		<p>(19)t-test-1</p>
-		<p>1 Seconds Less is better</p>
-		<p>(20)Cache Bench</p>
-		<p>1 MB's More is better</p>
-		<p>(21)Cache Bench</p>
-		<p>1 MB's More is better</p>
-		<h3>ANALYSIS</h3>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<h3>CONCLUSIONS</h3>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
+			<p>Once installed I then went to the Raspberry Pi interface and ran the tests</p>
+			<p>1. Select Command Menu - System Tools - phoronix test suite</p>
+			<p>2. Command terminal is displayed</p>
+			<p>3. Select 2 "Run a Suite"</p>
+			<p>4. Select the appropriate tests as listed above</p>
+			<br>
+			<h3>RESULTS</h3>
+			<p>005 Chess - 3 results</p>
+			<p>(1) TSCP</p>
+			<p>351441 seconds (less is better this was to the higher end)</p>
+			<p>(2) m-queens</p>
+			<p>1029.75 seconds (less is better this was to the higher end)</p>
+			<p>(3) N-Queens</p>
+			<p>230.81 seconds (less is better this was to the higher end)</p><br>
+			<p>011 CPU - 6 Results</p>
+			<p>(1) Rodinia</p>
+			<p>1378.06 Seconds less is better</p>
+			<p>(2) Rodinia</p>
+			<p>883.24 Seconds less is better</p>
+			<p>(3) 7 Zip Compression</p>
+			<p>1034 MIPS More is better</p>
+			<p>(4) Timed Linux Kernel Compilation</p>
+			<p>5428.55 Seconds less is better</p>
+			<p>(5) Open SSL</p>
+			<p>59.08 Signs per second more is better</p>
+			<p>(6) Sysbench</p>
+			<p>256.31 Events per second more is better</p>
+			<p>014 Cryptography - 19 results</p>
+			<p>(1) Cypto++</p>
+			<p>163.98 MIB/Seconds (More is better)</p>
+			<p>(2) Crypto++</p>
+			<p>78.98 MIB/Seconds (More is better)</p>
+			<p>(3) Crypto++</p>
+			<p>52.32 MIB/Seconds (More is better)</p>
+			<p>(4) Crypto++</p>
+			<p>383.81 MIB/Seconds (More is better)</p>
+			<p>(5) Bork File encrypter</p>
+			<p>101.33 seconds (less is better this was to the higher end)</p>
+			<p>(6) Nettle/</p>
+			<p>96.71 MBytes/s more is better (the Pi is underpowered it would appear)</p>
+			<p>(7) Nettle</p>
+			<p>104.45 MBytes/s more is better (the Pi is underpowered it would appear)</p>
+			<p>(8) Nettle</p>
+			<p>70.37 MBytes/s more is better (the Pi is underpowered it would appear)</p>
+			<p>(9) Nettle</p>
+			<p>245.47 MBytes/s more is better (the Pi is underpowered it would appear)</p>
+			<p>(10) Botan</p>
+			<p>27.05 MIB/Seconds (More is better)</p>
+			<p>(11) Botan</p>
+			<p>18.95 MIB/Seconds (More is better)</p>
+			<p>(12) Botan</p>
+			<p>68.95 MIB/Seconds (More is better)</p>
+			<p>(13) Botan</p>
+			<p>71.09 MIB/Seconds (More is better)</p>
+			<p>(14) Botan</p>
+			<p>39.70 MIB/Seconds (More is better)</p>
+			<p>(15) John the Ripper</p>
+			<p>862 Real C/S More is better</p>
+			<p>(16) John the Ripper</p>
+			<p>24503 Real C/S More is better</p>
+			<p>(17) GnuPG</p>
+			<p>56.03 Seconds (less is better)</p>
+			<p>(18) OpenSSL</p>
+			<p>97.53 Signs per second More is better</p>
+			<p>(19) Aircrack-ng</p>
+			<p>1159.75 K/S More is better</p><br>
+			<p>079 Network - 21 Results</p>
+			<p>(1) RamSpeed SMP</p>
+			<p>3080.63 MB's More is better</p>
+			<p>(2) RamSpeed SMP</p>
+			<p>3343.21 MB's More is better</p>
+			<p>(3) RamSpeed SMP</p>
+			<p>3191.36 MB's More is better</p>
+			<p>(4) RamSpeed SMP</p>
+			<p>3277.25 MB's More is better</p>
+			<p>(5) RamSpeed SMP</p>
+			<p>3313.26 MB's More is better</p>
+			<p>(6) RamSpeed SMP</p>
+			<p>3212.91 MB's More is better</p>
+			<p>(7) RamSpeed SMP</p>
+			<p>3000.44 MB's More is better</p>
+			<p>(8) RamSpeed SMP</p>
+			<p>3654.36 MB's More is better</p>
+			<p>(9) RamSpeed SMP</p>
+			<p>3104.00 MB's More is better</p>
+			<p>(10) RamSpeed SMP</p>
+			<p>3295.76 MB's More is better</p>
+			<p>(11) Steam</p>
+			<p>3749.82 MB's More is better</p>
+			<p>(12) Steam</p>
+			<p>3875 MB's More is better</p>
+			<p>(13) Steam</p>
+			<p>3396.66 MB's More is better</p>
+			<p>(14) Steam</p>
+			<p>3452.08 MB's More is better</p>
+			<p>(15) Tinymembench</p>
+			<p>1682.93 MB's More is better</p>
+			<p>(16) MBW</p>
+			<p>1604.92 MB's More is better</p>
+			<p>(17) MBW</p>
+			<p>1733.92 MB's More is better</p>
+			<p>(18) t-test1</p>
+			<p>257.45 Seconds Less is better</p>
+			<p>(19) t-test-1</p>
+			<p>168.83 Seconds Less is better</p>
+			<p>(20) Cache Bench</p>
+			<p>3403.62 MB's More is better</p>
+			<p>(21) Cache Bench</p>
+			<p>5193.90 MB's More is better</p>
+			<br>
+			<h3>ANALYSIS</h3>
+			<p>Simple put the results do not look favourable for the Raspberry Pi as a crypto mining device.</p>
+			<p>They are high when they should be low and low when high, it is by its nature a lite computer</p>
+			<p>so it is puzzling why someone would want to use it for this, I can understand that they can tweak</p>
+			<p>the Pi but the results for CPU, Network and Crypto do not look good. After having read the article</p>
+			<p> and studied the results I cannot see that it is feasible beyond a simple curiosity</p>
+			<br>
+			<h3>CONCLUSIONS</h3>
+			<p>I would not think that this is a proper device to be used for crypto currency mining</p>
+			<p>The more people who get involved the harder it is to mine and the more likelihood of the Pi failing</p>
+			<p>Even when grouping together you still run the risk of the large crypto miners in China</p>
+			<p>out stripping you and so you lose out</p>
+			<br>
+			<p>I would recommend against it as a way of making money but maybe as a simple hobby</p>
 	</body>
 </html>
-
