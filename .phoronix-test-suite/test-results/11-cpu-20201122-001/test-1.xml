@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>11 CPU - 20201122 001</Title>
+    <LastModified>2020-11-22 08:55:03</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>ARMv7 rev 3 testing on Raspbian 10 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>11 CPU test 20201122 001</Identifier>
+    <Hardware>Processor: ARMv7 rev 3 @ 1.50GHz (4 Cores), Motherboard: BCM2711, Memory: 4096MB, Disk: 64GB SN64G</Hardware>
+    <Software>OS: Raspbian 10, Kernel: 5.4.72-v7l+ (armv7l), Desktop: LXDE 0.10.0, Display Server: X Server plymouth.ignore-serial-consoles, File-System: ext4, Screen Resolution: 1280x1024</Software>
+    <User>s3294034</User>
+    <TimeStamp>2020-11-22 08:55:03</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=arm-linux-gnueabihf --disable-libitm --disable-libquadmath --disable-libquadmath-support --disable-sjlj-exceptions --disable-werror --enable-bootstrap --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-objc-gc=auto --enable-plugin --enable-shared --enable-threads=posix --host=arm-linux-gnueabihf --program-prefix=arm-linux-gnueabihf- --target=arm-linux-gnueabihf --with-arch=armv6 --with-default-libstdcxx-abi=new --with-float=hard --with-fpu=vfp --with-gcc-major-version-only --with-target-system-zlib -v","cpu-scaling-governor":"cpufreq-dt ondemand","kernel-parameters":"snd_bcm2835.enable_compat_alsa=0 snd_bcm2835.enable_hdmi=1 snd_bcm2835.enable_headphones=1"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/rodinia-1.2.2</Identifier>
+    <Title>Rodinia</Title>
+    <AppVersion>2.4</AppVersion>
+    <Arguments>OMP_LAVAMD</Arguments>
+    <Description>Test: OpenMP LavaMD</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>11 CPU test 20201122 001</Identifier>
+        <Value>1378.06</Value>
+        <RawString>1279.0743350983:1562.5032451153:1292.6120848656</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -fopenmp"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/rodinia-1.2.2</Identifier>
+    <Title>Rodinia</Title>
+    <AppVersion>2.4</AppVersion>
+    <Arguments>OMP_CFD</Arguments>
+    <Description>Test: OpenMP CFD Solver</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>11 CPU test 20201122 001</Identifier>
+        <Value>883.24</Value>
+        <RawString>956.11015415192:947.99438095093:882.55332994461:838.51302599907:842.70937013626:831.56794881821</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -fopenmp"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-7zip-1.7.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>16.02</AppVersion>
+    <Arguments></Arguments>
+    <Description>Compress Speed Test</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>11 CPU test 20201122 001</Identifier>
+        <Value>1034</Value>
+        <RawString>1054:1031:1017</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-linux-kernel-1.9.1</Identifier>
+    <Title>Timed Linux Kernel Compilation</Title>
+    <AppVersion>4.18</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>11 CPU test 20201122 001</Identifier>
+        <Value>5428.55</Value>
+        <RawString>8704.0999939442:4806.2162780762:2775.3374459743</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/openssl-1.11.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion>1.1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>RSA 4096-bit Performance</Description>
+    <Scale>Signs Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>11 CPU test 20201122 001</Identifier>
+        <Value>59.08</Value>
+        <RawString>70.4:59.8:56.8:55.6:57.9:54</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -march=armv7-a -O3 -lssl -lcrypto -ldl"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/sysbench-1.0.0</Identifier>
+    <Title>Sysbench</Title>
+    <AppVersion>2018-07-28</AppVersion>
+    <Arguments>cpu run</Arguments>
+    <Description>Test: CPU</Description>
+    <Scale>Events Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>11 CPU test 20201122 001</Identifier>
+        <Value>256.31</Value>
+        <RawString>277.7742:257.3566:260.9231:252.8291:245.0861:243.9169</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -O3 -funroll-loops -ggdb3 -rdynamic -ldl -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

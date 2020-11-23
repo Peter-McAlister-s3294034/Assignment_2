@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>11 CPU Test Suite</Title>
+    <LastModified>2020-11-22 08:07:56</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>ARMv7 rev 3 testing on Raspbian 10 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>20201122 11 CPU 001</Identifier>
+    <Hardware>Processor: ARMv7 rev 3 @ 1.50GHz (4 Cores), Motherboard: BCM2711, Memory: 4096MB, Disk: 64GB SN64G</Hardware>
+    <Software>OS: Raspbian 10, Kernel: 5.4.72-v7l+ (armv7l), Desktop: LXDE 0.10.0, Display Server: X Server plymouth.ignore-serial-consoles, File-System: ext4, Screen Resolution: 1920x1080</Software>
+    <User>s3294034</User>
+    <TimeStamp>2020-11-22 08:07:56</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+  </System>
+</PhoronixTestSuite>

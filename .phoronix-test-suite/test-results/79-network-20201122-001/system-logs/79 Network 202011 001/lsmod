@@ -1,0 +1,59 @@
+Module                  Size  Used by
+cmac                   16384  1
+rfcomm                 49152  4
+bnep                   20480  2
+hci_uart               40960  1
+btbcm                  16384  1 hci_uart
+bluetooth             372736  29 hci_uart,bnep,btbcm,rfcomm
+ecdh_generic           16384  2 bluetooth
+ecc                    40960  1 ecdh_generic
+fuse                  118784  5
+8021q                  32768  0
+garp                   16384  1 8021q
+stp                    16384  1 garp
+llc                    16384  2 garp,stp
+brcmfmac              319488  0
+brcmutil               20480  1 brcmfmac
+sha256_generic         16384  0
+libsha256              20480  1 sha256_generic
+v3d                    69632  2
+gpu_sched              36864  1 v3d
+cfg80211              692224  1 brcmfmac
+vc4                   241664  2
+cec                    49152  1 vc4
+drm_kms_helper        184320  3 vc4
+rfkill                 28672  6 bluetooth,cfg80211
+drm                   466944  8 v3d,vc4,gpu_sched,drm_kms_helper
+bcm2835_codec          36864  0
+bcm2835_isp            32768  0
+v4l2_mem2mem           32768  1 bcm2835_codec
+drm_panel_orientation_quirks    16384  1 drm
+videobuf2_dma_contig    20480  2 bcm2835_isp,bcm2835_codec
+snd_soc_core          200704  1 vc4
+snd_bcm2835            28672  3
+bcm2835_v4l2           49152  0
+bcm2835_mmal_vchiq     28672  3 bcm2835_isp,bcm2835_codec,bcm2835_v4l2
+snd_compress           20480  1 snd_soc_core
+snd_pcm_dmaengine      16384  1 snd_soc_core
+videobuf2_vmalloc      16384  1 bcm2835_v4l2
+videobuf2_memops       16384  2 videobuf2_dma_contig,videobuf2_vmalloc
+snd_pcm                98304  4 vc4,snd_pcm_dmaengine,snd_bcm2835,snd_soc_core
+videobuf2_v4l2         28672  4 bcm2835_isp,bcm2835_codec,bcm2835_v4l2,v4l2_mem2mem
+raspberrypi_hwmon      16384  0
+snd_timer              32768  1 snd_pcm
+videobuf2_common       57344  5 bcm2835_isp,bcm2835_codec,bcm2835_v4l2,v4l2_mem2mem,videobuf2_v4l2
+videodev              237568  6 bcm2835_isp,bcm2835_codec,videobuf2_common,bcm2835_v4l2,v4l2_mem2mem,videobuf2_v4l2
+snd                    73728  11 snd_compress,snd_timer,snd_bcm2835,snd_soc_core,snd_pcm
+mc                     40960  6 bcm2835_isp,bcm2835_codec,videobuf2_common,videodev,v4l2_mem2mem,videobuf2_v4l2
+rpivid_mem             16384  0
+vc_sm_cma              32768  2 bcm2835_isp,bcm2835_mmal_vchiq
+syscopyarea            16384  1 drm_kms_helper
+sysfillrect            16384  1 drm_kms_helper
+sysimgblt              16384  1 drm_kms_helper
+fb_sys_fops            16384  1 drm_kms_helper
+uio_pdrv_genirq        16384  0
+uio                    20480  1 uio_pdrv_genirq
+i2c_dev                20480  0
+ip_tables              28672  0
+x_tables               32768  1 ip_tables
+ipv6                  466944  26

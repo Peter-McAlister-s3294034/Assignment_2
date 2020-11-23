@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>014-Crypto</Title>
+    <LastModified>2020-11-22 21:21:48</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>ARMv7 rev 3 testing on Raspbian 10 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>014-Crypto-20201122-001</Identifier>
+    <Hardware>Processor: ARMv7 rev 3 @ 1.50GHz (4 Cores), Motherboard: BCM2711, Memory: 4096MB, Disk: 64GB SN64G</Hardware>
+    <Software>OS: Raspbian 10, Kernel: 5.4.72-v7l+ (armv7l), Desktop: LXDE 0.10.0, Display Server: X Server plymouth.ignore-serial-consoles, File-System: ext4, Screen Resolution: 1280x1024</Software>
+    <User>s3294034</User>
+    <TimeStamp>2020-11-22 21:21:48</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=arm-linux-gnueabihf --disable-libitm --disable-libquadmath --disable-libquadmath-support --disable-sjlj-exceptions --disable-werror --enable-bootstrap --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-objc-gc=auto --enable-plugin --enable-shared --enable-threads=posix --host=arm-linux-gnueabihf --program-prefix=arm-linux-gnueabihf- --target=arm-linux-gnueabihf --with-arch=armv6 --with-default-libstdcxx-abi=new --with-float=hard --with-fpu=vfp --with-gcc-major-version-only --with-target-system-zlib -v","cpu-scaling-governor":"cpufreq-dt ondemand","kernel-parameters":"snd_bcm2835.enable_compat_alsa=0 snd_bcm2835.enable_hdmi=1 snd_bcm2835.enable_headphones=1"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/cryptopp-1.0.1</Identifier>
+    <Title>Crypto++</Title>
+    <AppVersion>8.2</AppVersion>
+    <Arguments>b</Arguments>
+    <Description>Test: All Algorithms</Description>
+    <Scale>MiB/second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>163.98</Value>
+        <RawString>163.835474:164.091187:164.02157</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-g2 -O3 -fPIC -pthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/cryptopp-1.0.1</Identifier>
+    <Title>Crypto++</Title>
+    <AppVersion>8.2</AppVersion>
+    <Arguments>b2</Arguments>
+    <Description>Test: Keyed Algorithms</Description>
+    <Scale>MiB/second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>78.98</Value>
+        <RawString>79.064137:78.960405:78.921741</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-g2 -O3 -fPIC -pthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/cryptopp-1.0.1</Identifier>
+    <Title>Crypto++</Title>
+    <AppVersion>8.2</AppVersion>
+    <Arguments>b1</Arguments>
+    <Description>Test: Unkeyed Algorithms</Description>
+    <Scale>MiB/second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>52.32</Value>
+        <RawString>52.366039:52.339671:52.241725</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-g2 -O3 -fPIC -pthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/cryptopp-1.0.1</Identifier>
+    <Title>Crypto++</Title>
+    <AppVersion>8.2</AppVersion>
+    <Arguments>b3</Arguments>
+    <Description>Test: Integer + Elliptic Curve Public Key Algorithms</Description>
+    <Scale>MiB/second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>383.81</Value>
+        <RawString>384.047865:384.386786:383.001413</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-g2 -O3 -fPIC -pthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/bork-1.0.1</Identifier>
+    <Title>Bork File Encrypter</Title>
+    <AppVersion>1.4</AppVersion>
+    <Arguments></Arguments>
+    <Description>File Encryption Time</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>101.33</Value>
+        <RawString>103.80872011185:125.16056704521:96.319906949997:83.572937011719:99.772551059723:99.373096942902</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nettle-1.0.1</Identifier>
+    <Title>Nettle</Title>
+    <AppVersion>3.5.1</AppVersion>
+    <Arguments>aes256</Arguments>
+    <Description>Test: aes256</Description>
+    <Scale>Mbyte/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>96.71</Value>
+        <RawString>96.703333333333:96.72:96.706666666667</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -ggdb3 -lnettle -lm -lcrypto"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nettle-1.0.1</Identifier>
+    <Title>Nettle</Title>
+    <AppVersion>3.5.1</AppVersion>
+    <Arguments>chacha</Arguments>
+    <Description>Test: chacha</Description>
+    <Scale>Mbyte/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>104.45</Value>
+        <RawString>103.94:104.762:104.654</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -ggdb3 -lnettle -lm -lcrypto"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nettle-1.0.1</Identifier>
+    <Title>Nettle</Title>
+    <AppVersion>3.5.1</AppVersion>
+    <Arguments>sha512</Arguments>
+    <Description>Test: sha512</Description>
+    <Scale>Mbyte/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>70.37</Value>
+        <RawString>70.42:70.41:70.28</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -ggdb3 -lnettle -lm -lcrypto"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nettle-1.0.1</Identifier>
+    <Title>Nettle</Title>
+    <AppVersion>3.5.1</AppVersion>
+    <Arguments>poly1305-aes</Arguments>
+    <Description>Test: poly1305-aes</Description>
+    <Scale>Mbyte/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>245.47</Value>
+        <RawString>245.47:245.47:245.47</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -ggdb3 -lnettle -lm -lcrypto"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/botan-1.5.0</Identifier>
+    <Title>Botan</Title>
+    <AppVersion>2.13.0</AppVersion>
+    <Arguments>KASUMI</Arguments>
+    <Description>Test: KASUMI</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>27.05</Value>
+        <RawString>27.112:27.021:27.018</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fstack-protector -pthread -lbotan-2 -ldl -lrt"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/botan-1.5.0</Identifier>
+    <Title>Botan</Title>
+    <AppVersion>2.13.0</AppVersion>
+    <Arguments>AES-256</Arguments>
+    <Description>Test: AES-256</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>18.95</Value>
+        <RawString>19.072:18.9:18.865</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fstack-protector -pthread -lbotan-2 -ldl -lrt"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/botan-1.5.0</Identifier>
+    <Title>Botan</Title>
+    <AppVersion>2.13.0</AppVersion>
+    <Arguments>Twofish</Arguments>
+    <Description>Test: Twofish</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>68.29</Value>
+        <RawString>68.182:68.595:68.08</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fstack-protector -pthread -lbotan-2 -ldl -lrt"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/botan-1.5.0</Identifier>
+    <Title>Botan</Title>
+    <AppVersion>2.13.0</AppVersion>
+    <Arguments>Blowfish</Arguments>
+    <Description>Test: Blowfish</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>71.09</Value>
+        <RawString>71.146:71.236:70.893</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fstack-protector -pthread -lbotan-2 -ldl -lrt"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/botan-1.5.0</Identifier>
+    <Title>Botan</Title>
+    <AppVersion>2.13.0</AppVersion>
+    <Arguments>CAST-256</Arguments>
+    <Description>Test: CAST-256</Description>
+    <Scale>MiB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>39.70</Value>
+        <RawString>39.808:39.669:39.626</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fstack-protector -pthread -lbotan-2 -ldl -lrt"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/john-the-ripper-1.7.2</Identifier>
+    <Title>John The Ripper</Title>
+    <AppVersion>1.9.0-jumbo-1</AppVersion>
+    <Arguments>--format=bcrypt</Arguments>
+    <Description>Test: Blowfish</Description>
+    <Scale>Real C/S</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>862</Value>
+        <RawString>861:862:863</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-fopenmp"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/john-the-ripper-1.7.2</Identifier>
+    <Title>John The Ripper</Title>
+    <AppVersion>1.9.0-jumbo-1</AppVersion>
+    <Arguments>--format=md5crypt</Arguments>
+    <Description>Test: MD5</Description>
+    <Scale>Real C/S</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>24503</Value>
+        <RawString>24517:24509:24483</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-fopenmp"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/gnupg-2.4.0</Identifier>
+    <Title>GnuPG</Title>
+    <AppVersion>1.4.22</AppVersion>
+    <Arguments></Arguments>
+    <Description>2GB File Encryption</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>56.03</Value>
+        <RawString>55.621888875961:58.079181194305:54.380701065063</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -MT -MD -MP -MF"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/openssl-1.11.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion>1.1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>RSA 4096-bit Performance</Description>
+    <Scale>Signs Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>97.53</Value>
+        <RawString>97.6:97.6:97.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread -march=armv7-a -O3 -lssl -lcrypto -ldl"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/aircrack-ng-1.2.1</Identifier>
+    <Title>Aircrack-ng</Title>
+    <AppVersion>1.5.2</AppVersion>
+    <Arguments></Arguments>
+    <Description>Phoronix Test Suite v5.2.1</Description>
+    <Scale>k/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>014-Crypto-20201122-001</Identifier>
+        <Value>1159.75</Value>
+        <RawString>1158.41:1160.095:1160.73</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -fvisibility=hidden -fcommon -rdynamic -lpthread -lz -lcrypto -ldl -lm -pthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

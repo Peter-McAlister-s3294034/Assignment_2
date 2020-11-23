@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>05-Chess</Title>
+    <LastModified>2020-11-22 19:48:27</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>ARMv7 rev 3 testing on Raspbian 10 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>05-Chess-20201122 001</Identifier>
+    <Hardware>Processor: ARMv7 rev 3 @ 1.50GHz (4 Cores), Motherboard: BCM2711, Memory: 4096MB, Disk: 64GB SN64G</Hardware>
+    <Software>OS: Raspbian 10, Kernel: 5.4.72-v7l+ (armv7l), Desktop: LXDE 0.10.0, Display Server: X Server plymouth.ignore-serial-consoles, File-System: ext4, Screen Resolution: 1280x1024</Software>
+    <User>s3294034</User>
+    <TimeStamp>2020-11-22 19:48:27</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=arm-linux-gnueabihf --disable-libitm --disable-libquadmath --disable-libquadmath-support --disable-sjlj-exceptions --disable-werror --enable-bootstrap --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-nls --enable-objc-gc=auto --enable-plugin --enable-shared --enable-threads=posix --host=arm-linux-gnueabihf --program-prefix=arm-linux-gnueabihf- --target=arm-linux-gnueabihf --with-arch=armv6 --with-default-libstdcxx-abi=new --with-float=hard --with-fpu=vfp --with-gcc-major-version-only --with-target-system-zlib -v","cpu-scaling-governor":"cpufreq-dt ondemand","kernel-parameters":"snd_bcm2835.enable_compat_alsa=0 snd_bcm2835.enable_hdmi=1 snd_bcm2835.enable_headphones=1"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/tscp-1.2.2</Identifier>
+    <Title>TSCP</Title>
+    <AppVersion>1.81</AppVersion>
+    <Arguments></Arguments>
+    <Description>AI Chess Performance</Description>
+    <Scale>Nodes Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>05-Chess-20201122 001</Identifier>
+        <Value>351441</Value>
+        <RawString>351037:351710:351934:351934:350590</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/m-queens-1.1.0</Identifier>
+    <Title>m-queens</Title>
+    <AppVersion>1.2</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Solve</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>05-Chess-20201122 001</Identifier>
+        <Value>1029.75</Value>
+        <RawString>786.32677292824:865.30638790131:936.63511586189:1530.7294890881</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-fopenmp -O2 -march=native"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/n-queens-1.2.1</Identifier>
+    <Title>N-Queens</Title>
+    <AppVersion>1.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Elapsed Time</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>05-Chess-20201122 001</Identifier>
+        <Value>230.81</Value>
+        <RawString>286.685:309.197:266.369:202.297:159.409:160.888</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-static -fopenmp -O3 -march=native"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

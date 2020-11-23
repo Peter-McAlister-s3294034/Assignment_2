@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>19 Disk</Title>
+    <LastModified>2020-11-22 08:24:00</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>ARMv7 rev 3 testing on Raspbian 10 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>20201122 19 Disk 001</Identifier>
+    <Hardware>Processor: ARMv7 rev 3 @ 1.50GHz (4 Cores), Motherboard: BCM2711, Memory: 4096MB, Disk: 64GB SN64G</Hardware>
+    <Software>OS: Raspbian 10, Kernel: 5.4.72-v7l+ (armv7l), Desktop: LXDE 0.10.0, Display Server: X Server plymouth.ignore-serial-consoles, File-System: ext4, Screen Resolution: 1280x1024</Software>
+    <User>s3294034</User>
+    <TimeStamp>2020-11-22 08:24:00</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+  </System>
+  <Result>
+    <Identifier>pts/sqlite-2.1.0</Identifier>
+    <Title>SQLite</Title>
+    <AppVersion>3.30.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Timed SQLite Insertions</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>20201122 19 Disk 001</Identifier>
+        <Value>92.08</Value>
+        <RawString>93.331269025803:91.515657186508:91.382127046585</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lz -lm -ldl -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fs-mark-1.0.2</Identifier>
+    <Title>FS-Mark</Title>
+    <AppVersion>3.3</AppVersion>
+    <Arguments>-s 1048576 -n 1000</Arguments>
+    <Description>Test: 1000 Files, 1MB Size</Description>
+    <Scale>Files/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>20201122 19 Disk 001</Identifier>
+        <Value>20.70</Value>
+        <RawString>20.6:20.8:20.7</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-static"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fs-mark-1.0.2</Identifier>
+    <Title>FS-Mark</Title>
+    <AppVersion>3.3</AppVersion>
+    <Arguments>-s 1048576 -n 5000 -t 4</Arguments>
+    <Description>Test: 5000 Files, 1MB Size, 4 Threads</Description>
+    <Scale>Files/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>20201122 19 Disk 001</Identifier>
+        <Value>25.33</Value>
+        <RawString>26:24.4:25.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-static"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fs-mark-1.0.2</Identifier>
+    <Title>FS-Mark</Title>
+    <AppVersion>3.3</AppVersion>
+    <Arguments>-s 1048576 -n 4000 -D 32</Arguments>
+    <Description>Test: 4000 Files, 32 Sub Dirs, 1MB Size</Description>
+    <Scale>Files/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>20201122 19 Disk 001</Identifier>
+        <Value>19.15</Value>
+        <RawString>18.3:19.6:19.5:19.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-static"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/fs-mark-1.0.2</Identifier>
+    <Title>FS-Mark</Title>
+    <AppVersion>3.3</AppVersion>
+    <Arguments>-s 1048576 -n 1000 -S 0</Arguments>
+    <Description>Test: 1000 Files, 1MB Size, No Sync/FSync</Description>
+    <Scale>Files/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>20201122 19 Disk 001</Identifier>
+        <Value>32.62</Value>
+        <RawString>29.6:30.3:34.1:33.8:34:33.9</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-static"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/dbench-1.0.1</Identifier>
+    <Title>Dbench</Title>
+    <AppVersion>4.0</AppVersion>
+    <Arguments>12</Arguments>
+    <Description>12 Clients</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>20201122 19 Disk 001</Identifier>
+        <Value>53.79</Value>
+        <RawString>53.4899:53.1751:54.7051</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lpopt -O2"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/dbench-1.0.1</Identifier>
+    <Title>Dbench</Title>
+    <AppVersion>4.0</AppVersion>
+    <Arguments>1</Arguments>
+    <Description>1 Clients</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>20201122 19 Disk 001</Identifier>
+        <Value>26.26</Value>
+        <RawString>25.7873:26.4045:26.5805</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lpopt -O2"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

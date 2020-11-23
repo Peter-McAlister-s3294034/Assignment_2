@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>80-network</Title>
+    <LastModified>2020-11-22 19:39:48</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>ARMv7 rev 3 testing on Raspbian 10 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>80-network 20201122 002</Identifier>
+    <Hardware>Processor: ARMv7 rev 3 @ 1.50GHz (4 Cores), Motherboard: BCM2711, Memory: 4096MB, Disk: 64GB SN64G</Hardware>
+    <Software>OS: Raspbian 10, Kernel: 5.4.72-v7l+ (armv7l), Desktop: LXDE 0.10.0, Display Server: X Server plymouth.ignore-serial-consoles, File-System: ext4, Screen Resolution: 1280x1024</Software>
+    <User>s3294034</User>
+    <TimeStamp>2020-11-22 19:39:49</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+  </System>
+  <Result>
+    <Identifier>pts/sockperf-1.0.0</Identifier>
+    <Title>Sockperf</Title>
+    <AppVersion>3.4</AppVersion>
+    <Arguments>throughput</Arguments>
+    <Description>Test: Throughput</Description>
+    <Scale>Messages Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>80-network 20201122 002</Identifier>
+        <Value>40271</Value>
+        <RawString>41644:40921:39589:39616:39583</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"--param -O3 -rdynamic -ldl -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/sockperf-1.0.0</Identifier>
+    <Title>Sockperf</Title>
+    <AppVersion>3.4</AppVersion>
+    <Arguments>ping-pong</Arguments>
+    <Description>Test: Latency Ping Pong</Description>
+    <Scale>usec</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>80-network 20201122 002</Identifier>
+        <Value>35.34</Value>
+        <RawString>35.221:35.699:35.544:34.743:35.514</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"--param -O3 -rdynamic -ldl -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
