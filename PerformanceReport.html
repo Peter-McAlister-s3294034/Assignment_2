@@ -5,24 +5,70 @@
 	</head>
 	<body>
 		<h1>Performance Report Raspberry Pi</h1>
-		<h2>Student Name: Peter McAlister</h2>
-		<h2>Student Number: s3294034</h2>
-		<br>
-		<h3>INTRODUCTION</h3>
+		<h2>St<h2>Student Number: s3294034</h2>
+			<br>
+			<h3>INTRODUCTION</h3>
+			<p>The purpose of this report is to details findings from the running o I choose this tests is because they test the performance of the raspberry pi in terms of performance</p>
+			<p>against a real world situation, the raspberry pi can be used for crypto mining and as such the cpu and networking</p>
+			<p>cabability would be in question, I choose chess as a comparison as almost all computers have Chess as a game onystem</p><br>
+			<h3>METHOD</h3>
+			<p>I initially scrolled through the test suites and tests to see what was avaliable, I have tested many sofwtare applications but never performed</p>
+			<p>peformance testing whetehr jmeter or neoload so this is as close as I will get. Havign read an article about Pi's being used for crytpo I thought</p>
+			<p>what would be the parameters for the application that would need to be tested, this is why I decided on the above listed 4 stest suites </p><br>
+			<p>Installation: The steps used are as follows<p>
+			<p>1. sudo apt-get update of the pi to ensure that any necessary dependacies are in place</p>
+			<p>2. Alter the mirrors to those in the documentation (see below)</p>
+			<p>3. change directory tot he appropriate file</p>
+			<p> command: /etc/apt/sources.list</p>
+			<p>deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi</p>
+			<p>deb http://mbionic main restricted multiverse universe</p>
+			<p>4. Save the file</p>
+			<p>5. Next required the changing of the keys within the system - see below commands</p>
+			<p> command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32</p>
+			<p> command: sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 871920D1991BC93C</p>
+			<p>6.next install the test suites</p>
+			<p> command: sudo apt-get install phoronix-test-suite</p><br>
+			<p>Using Phoronix</p>
+			<p>Once installed I then went to the Raspberry Pi interface and ran th as listed above</p><br>
+			<hULTS</h3>
+		<p>005 Chess - 3 results</p>
+		<p>(1) TSCP</p>
+		<p>351441 seconds (less is better this was to the higher end)</p>
+		<p>(2) m-queens</p>
+		<p>1029.75 seconds (less is better this was to the higher end)</p>
+		<p>(3) N-Queens</p>
+		<p>seconds (less is better this was to the higher end)</p><br>
+		<p>014 Cryptography - 19 results</rypto++</p>
+		<p>MIB/Seconds (More is better)</p>
+		<p>(5) Bork File encrypter</p>
+		<p>1</p>
+		<p>(6) Nettle/p>
+		<p>1</p>
+		<p>(7) Nettle</p>
+		<p>1<p>1</p>
+		<p>(9) Nettle</p>
+		<p>1</p>
+		<p>(10) Botan</p>
+		<p>1</p>
+		<p>(11) Botan</p>
+		<p>1</p>
+		<p>(12) Botan</p>
+		<p>1</p>
+		<p>(13) Botan</p>
+		<p>1</p>
+		<p>(14) Botan</p>
+		<p>1</p>
+		<p>(15) John the Ripper</p>
+		<p>1</p>
+		<p>(16) John the Ripper</p>
+		<p>1</p>
+		<p>(17) GnuPG</p>
+		<p>1</p>
+		<p>(18) OpenSSL</p>
+		<p>1</p>
+		<p>(19) Aircrack-ng</p>
 		<p>1</p>
 		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<h3>METHOD</h3>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<p>1</p>
-		<h3>RESULTS</h3>
 		<p>1</p>
 		<p>1</p>
 		<p>1</p>
@@ -45,3 +91,4 @@
 		<p>1</p>
 	</body>
 </html>
+
