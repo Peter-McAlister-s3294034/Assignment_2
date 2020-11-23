@@ -1,12 +1,12 @@
 #! /bin/bash
 
-<<COMMENT
-*****************************************************************************
-********** Student Name: Peter McAlister     ********************************
-********** Student Number: s3294034          ********************************
-********** Assignment: 2                     ********************************
-*****************************************************************************
-COMMENT
+
+# *****************************************************************************
+# ********** Student Name: Peter McAlister     ********************************
+# ********** Student Number: s3294034          ********************************
+# ********** Assignment: 2                     ********************************
+# *****************************************************************************
+
 
 # To ensure this works the collaborator must have their ssh key set up on GIT
 # If this is done then the git clone will look in the appropriate .ssh 
@@ -18,7 +18,7 @@ COMMENT
 mkdir s3294034_Assignment_2
 
 # change to that directory
-cd s3294034_Assignment_2
+cd s3294034_Assignment_2 || exit
 
 #.ssh clone for the repository - rmitusap has been made collaborator
 git clone git@github.com:Peter-McAlister-s3294034/Assignment_2.git
@@ -37,7 +37,7 @@ cp -r ~/s3294034_Assignment_2/Assignment_2/.config ~/s3294034_Assignment_2/linux
 # Raspberry Pi 4 default build configuration
 # Changes directory and applies default configuration
 
-cd linux
+cd linux || exit
 KERNEL=kernel7l
 make bcm2711_defconfig
 
